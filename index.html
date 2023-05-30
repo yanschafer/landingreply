@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>Мой Психолог</title>
+    <meta name="title" content="Мой Психолог">
+    <meta name="description" content="Сервис психологической поддержки по подписке, онлайн-консультации и неограниченный чат">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://psyreply.com/">
+    <meta property="og:title" content="Мой Психолог">
+    <meta property="og:description" content="Сервис психологической поддержки по подписке, онлайн-консультации и неограниченный чат">
+    <meta property="og:image" content="./img/preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://psyreply.com/">
+    <meta property="twitter:title" content="Мой Психолог">
+    <meta property="twitter:description" content="Сервис психологической поддержки по подписке, онлайн-консультации и неограниченный чат">
+    <meta property="twitter:image" content="./img/preview.png">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta name="viewport" content="width=device-width">
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"
+    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="section s1">
+    <div class="row header">
+        <img class="logo" src="img/logo.png" style="width: 68px; height: 68px" />
+        <h4>Reply | Мой Психолог</h4>
+    </div>
+    <div class="row">
+        <div class="col image-col">
+            <img class="main" src="img/main.svg"/>
+        </div>
+        <div class="col text-col">
+            <h1>Мой Психолог - это психолог, который <br id="mobile-br"><span class="text-color">всегда на связи</span>
+            </h1>
+            <p style="margin-top: 2rem;">Онлайн-сессии и чаты, <br id="mobile-br"> когда нужна поддержка, сочувствие или чтобы кто-то дал действительно хороший совет.
+            </p>
+            <button type="button" data-mdb-toggle="modal" data-mdb-target="#emailModal" class="btn btn-offer text-white animate__animated animate__pulse animate__slow animate__infinite" style="background-color: #55acee; margin-top: 2rem;" href="#!" role="button">Оставить заявку</button>
+        </div>
+    </div>
+</section>
+
+<section id="s2" class="section s2">
+    <h1 class="hblack" data-aos="zoom-in-down"><i class="fa-solid fa-circle-question icon"></i>С чем можно обращаться к <span class="text-color">психологу</span>?</h1>
+    <table class="reasons">
+        <tbody>
+        <tr class="line">
+            <td colspan="3"><div data-aos="zoom-out-down" class="message">Разрываю отношения</div></td>
+        </tr>
+        <tr>
+            <td><div class="message" data-aos="zoom-out-right">Я чувствую себя одиноко</div></td>
+            <td rowspan="3"><img class="scare animate__animated animate__pulse animate__slow animate__infinite" src="img/scare.svg"/></td>
+            <td> <div class="message" data-aos="zoom-out-left">Проживаю потерю близкого</div></td>
+        </tr>
+        <tr>
+            <td><div class="message" data-aos="zoom-out-right">Переживаю ссору с близкими</div></td>
+            <td><div class="message" data-aos="zoom-out-left" >Очень страшно и тревожно</div></td>
+        </tr>
+        <tr>
+            <td><div class="message" data-aos="zoom-out-right">Я очень сильно злюсь</div></td>
+            <td><div class="message" data-aos="zoom-out-left">Просто хочу поныть</div></td>
+        </tr>
+        <tr class="line">
+            <td colspan="3"><div class="message" data-aos="zoom-out-up">Стресс на работе и учебе</div></td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="mobile-reasons">
+        <h3 class="message">
+            Я чувствую себя одиноко
+        </h3>
+        <h3 class="message">
+            Переживаю <br>ссору с близкими
+        </h3>
+        <h3 class="message">
+            Очень страшно и тревожно
+        </h3>
+        <h3 class="message">
+            Разрываю отношения
+        </h3>
+
+
+        <h3 class="message">
+            Я очень<br> сильно злюсь
+        </h3>
+        <h3 class="message">
+            Проживаю <br>потерю близкого
+        </h3>
+
+        <h3 class="message">
+            Стресс <br>на работе и учебе
+        </h3>
+    </div>
+</section>
+
+<section class="section s3">
+    <h2 data-aos="zoom-in-down" class="headings3"><i class="fa-solid fa-wand-magic-sparkles icon"></i>Что умеет <br id="mobile-br"><span class="text-color">мой психолог</span></h2>
+    <div data-aos="zoom-in-down" class="container container-bg">
+        <div class="row mobile-row">
+            <div class="col-4 img-col help-col">
+                <img class="help" src="img/help.svg"/>
+            </div>
+            <div class="col text-col">
+                <p class="small">Наши психологи - практикующие специалисты с огромным опытом. <br id="mobile-br"><br id="mobile-br">Положительные отзывы от клиентов подтверждают результаты их труда. <br id="mobile-br"><br id="mobile-br">Встречи с ними требуют предварительной записи и стоят немало, но мы предлагаем вам их помощь в режиме онлайн-чата.
+                </p>
+                <div class="alert alert-primary alert-mobile-off" role="alert">
+                    <i class="fa-solid fa-check-double"></i>  У каждого Психолога в запасе:
+                </div>
+                <div class="container badges">
+                    <span class="badge badge-pill badge-primary"><i class="fa-solid fa-circle dot"></i> Практические рекомендации<br id="mobile-br"> для самопомощи</span>
+                    <span class="badge badge-pill badge-primary"><i class="fa-solid fa-circle dot"></i> Навыки поддержки <br id="mobile-br"> в сложных ситуациях</span>
+                    <span class="badge badge-pill badge-primary"><i class="fa-solid fa-circle dot"></i> Методы диагностики</span>
+                    <span class="badge badge-pill badge-primary"><i class="fa-solid fa-circle dot"></i> 1000+ часов консультаций</span>
+                    <span class="badge badge-pill badge-primary"><i class="fa-solid fa-circle dot"></i> Сотни довольных клиентов</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section s4">
+    <div class="row">
+        <div class="col text-col">
+            <h1 data-aos="zoom-in-down">Познакомиться со своим <span class="text-color">психологом</span>
+            </h1>
+            <p style="margin-top: 2rem!important;">Напишите нам, чтобы найти своего психолога
+            </p>
+            <button type="button" data-mdb-toggle="modal" data-mdb-target="#emailModal" class="btn btn-offer text-white animate__animated animate__pulse animate__slow animate__infinite" style="background-color: #55acee; margin-top: 2rem;" href="#!" role="button">Оставить заявку</button>
+        </div>
+        <div class="col">
+            <img class="main" src="img/main.svg"/>
+        </div>
+    </div>
+
+</section>
+
+<section class="section s5">
+    <h2 style="margin-top: 2rem!important;" class="headings3" data-aos="zoom-in-down"><i class="fa-solid fa-hand-sparkles icon"></i>Когда <br id="mobile-br"><span class="text-color">Мой Психолог</span> может помочь?</h2>
+    <div class="container cards-container">
+        <div data-aos="zoom-in-down" class="card text-white mb-3" style="max-width: 18rem;">
+            <div  class="card-body small-body">
+                <h5 class="card-title small-title"><i class="fa-solid fa-person-shelter icon-help"></i></h5>
+                <p class="card-text small-text">Если нужно выслушать и понять тебя <br><span class="text-highlight">без осуждений</span></p>
+            </div>
+        </div>
+        <div data-aos="zoom-in-down" class="card text-white mb-3" style="max-width: 18rem;">
+            <div class="card-body small-body">
+                <h5 class="card-title small-title"><i class="fa-solid fa-comments icon-help"></i></h5>
+                <p class="card-text small-text">Если важен <span class="text-highlight">компетентный</span> взгляд со стороны или дельный совет</p>
+            </div>
+        </div>
+        <div data-aos="zoom-in-down" class="card text-white mb-3" style="max-width: 18rem;">
+            <div class="card-body small-body">
+                <h5 class="card-title small-title"><i class="fa-solid fa-comment-dots icon-help"></i></h5>
+                <p class="card-text small-text">Когда очень нужен <span class="text-highlight">внимательный <br>и бережный</span> собеседник</p>
+            </div>
+        </div>
+        <div data-aos="zoom-in-down" class="card text-white mb-3" style="max-width: 18rem;">
+            <div class="card-body small-body">
+                <h5 class="card-title small-title "><i class="fa-solid fa-face-sad-cry icon-help"></i></h5>
+                <p class="card-text small-text">Когда очень <br id="mobile-br"> плохо и нужна <br id="mobile-br"><span class="text-highlight">помощь прямо сейчас</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section s6">
+    <h2 data-aos="zoom-in-down" style="margin-top: 4rem; text-align: center;">Выбери психолога, который тебе <span class="text-color">близок</span></h2>
+    <div class="row crew" id="crew">
+        <div data-aos="zoom-in-down" class="card crew-card" style="width: 55rem;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-2 col-avatar">
+                        <img class="photo" src="img/bonch.jpg"/>
+                    </div>
+                    <div class="col-8 col-name">
+                        <h5 class="card-title name">Привет!<br> Я <span class="text-color">Роман</span> - психоаналитик
+                        </h5>
+                    </div>
+                </div>
+                <p class="card-text comment">За моими плечами более <b>7 лет опыта</b> и более <b>5 000 консультаций</b>. <br id="mobile-br"><br id="mobile-br">Моя специализация - работа с <b>депрессией, тревожностью и выгоранием</b>. <br id="mobile-br"><br id="mobile-br">Я применяю методы транзактного анализа, терапии нового решения и КПТ.
+                </p>
+                <div class="alert alert-primary quote" role="alert">
+                    Мы можем работать вместе, чтобы преодолеть трудности и достичь желаемых результатов. Я готов быть рядом с тобой на этом путешествии к психологическому благополучию.
+                </div>
+            </div>
+        </div>
+        <div data-aos="zoom-in-down" class="card crew-card" style="width: 55rem;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-2 col-avatar">
+                        <img class="photo" src="img/svetlana.png"/>
+                    </div>
+                    <div class="col-8 col-name">
+                        <h5 class="card-title name">Добрый день! <br>Меня зовут <span class="text-color">Светлана</span>
+                        </h5>
+                    </div>
+                </div>
+                <p class="card-text comment">Я - психолог-консультант с <b>более чем 20-летним опытом</b> работы. <br id="mobile-br"><br id="mobile-br">Готова помочь вам, если вы столкнулись с <b>потерей</b> близких, конфликтами, личностными <b>кризисами</b> или другими вызовами, я готова поддержать вас.</p>
+                <div class="alert alert-primary quote" role="alert">
+                    Не оставайтесь один на один с проблемами, дайте себе возможность обрести гармонию и справиться с трудностями. Свяжитесь со мной, и мы вместе найдем решение.
+                </div>
+            </div>
+        </div>
+        <div data-aos="zoom-in-down" class="card crew-card" style="width: 55rem;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-2 col-avatar">
+                        <img class="photo" src="img/alina.jpg"/>
+                    </div>
+                    <div class="col-8 col-name">
+                        <h5 class="card-title name">Здравствуйте! <br>Меня зовут <span class="text-color">Алина</span>
+                        </h5>
+                    </div>
+                </div>
+                <p class="card-text comment">Работаю психологом более <b>3 лет</b>. Часто мои клиенты это <b>женщинами</b> с созависимым поведением, проблемы в отношениях, работа с <b>самооценкой</b>.  <br id="mobile-br"><br id="mobile-br">Предпочитаю метод эмоционально-образная терапии, так как мои знания основаны не только на теории и образовании, но и на <b>личном опыте</b>!
+                </p>
+                <div class="alert alert-primary quote" role="alert">
+                    Помощь и поддержка человеку в трудной ситуации - это глоток ВОЗДУХА. Работаю с теми проблемами, с которыми сталкивалась сама и благополучно находила выход/
+                </div>
+            </div>
+        </div>
+        <div class="card crew-card" style="width: 55rem;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-2 col-avatar">
+                        <img class="photo" src="img/julia.jpg"/>
+                    </div>
+                    <div class="col-8 col-name">
+                        <h5 class="card-title name">Привет!<br> Я <span class="text-color">Юлия</span> - бережный психолог.
+                        </h5>
+                    </div>
+                </div>
+                <p class="card-text comment">Я работаю в методе терапии принятия и ответственности, третьей волны КПТ. Это некий <b>буддизм в психологии</b> - восточный и философский подход к жизни.
+                </p>
+                <p class="card-text comment" id="mobile-br">Со мной можно сделать небольшую остановку в суете современной жизни, понять чего <b>хочется</b> и возможно принять для себя важные <b>решения</b>
+                </p>
+                <div class="alert alert-primary quote" role="alert">
+                    Со мной можно сделать небольшую остановку в суете современной жизни, понять чего хочется и возможно принять для себя важные решения.
+                </div>
+            </div>
+        </div>
+        <div class="card crew-card more-card" style="width: 55rem;">
+            <div class="card-body more">
+                <div class="row">
+                    <i class="fa-solid fa-people-roof people-icon"></i>
+                    <h5 class="card-title name">И еще 100+ высококлассных психологов, ждут чтобы вам помочь
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section s7">
+    <div class="row">
+        <div class="text-col-big">
+            <h1 data-aos="zoom-in-down" style="margin-top: 4rem; text-align: center;">Как подобрать своего <span class="text-color">психолога</span>?
+            </h1>
+            <h3 style="margin-top: 2rem; margin-bottom: 2rem;">Это можно сделать всего за три шага:</h3>
+            <div data-aos="zoom-in-down" class="alert alert-primary" role="alert">
+                <h3><i class="fa-solid fa-check-double"></i> Оставь заявку</h3>
+                <p class="description">Наши консультанты ответят тебе лично</p>
+            </div>
+            <div data-aos="zoom-in-down" class="alert alert-primary" role="alert">
+                <h3><i class="fa-solid fa-check-double"></i> Выберите психолога</h3>
+                <p class="description">Консультант поможет подобрать подходящего специалиста
+                </p>
+            </div>
+            <div data-aos="zoom-in-down" class="alert alert-primary" role="alert">
+                <h3><i class="fa-solid fa-check-double"></i> Выбери тариф</h3>
+                <p class="description">И общайся с выбранным психологом когда хочешь
+                </p>
+            </div>
+            <button type="button" data-mdb-toggle="modal" data-mdb-target="#emailModal" class="btn btn-offer text-white animate__animated animate__pulse animate__slow animate__infinite" style="background-color: #55acee; margin-top: 2rem;" href="#!" role="button">Оставить заявку</button>
+        </div>
+    </div>
+
+</section>
+
+<section class="section s8">
+    <h1 style="margin-top: 4rem;">Выбери свой <span class="text-color">тариф</span></h1>
+    <div class="row bills">
+        <div class="card" style="width: 26rem; height: 26rem">
+            <div class="card-body offer">
+                <h3 class="card-title" style="text-align: center"><i class="fa-solid fa-person-walking icon-price"></i> Подписка на 7 дней</h3>
+                <p class="card-text">
+                <ul class="offer-description">
+                    <li>1 онлайн-сессия</li>
+                    <li>Неограниченный чат</li>
+                </ul>
+                <span class="price-tag">2 400₽ <span class="disclaimer">в неделю</span></span>
+                </p>
+                <button type="button" data-mdb-toggle="modal" data-mdb-target="#emailModal" class="btn btn-offer-default text-white animate__animated animate__pulse animate__slow animate__infinite" style="background-color: #55acee; margin-top: 2rem; font-size: 1.3rem;" href="#!" role="button">Оставить заявку</button>
+
+            </div>
+        </div>
+        <div class="card card-special" style="width: 26rem; height: 26rem">
+            <div class="card-body offer">
+                <h3 class="card-title" style="text-align: center; color: white;"><i class="fa-solid fa-fire icon-price-main"></i> Подписка на месяц</h3>
+                <p class="card-text">
+                <ul class="offer-description" style="color: white;">
+                    <li>3 онлайн-сессии</li>
+                    <li>Неограниченный чат</li>
+                </ul>
+                <span class="price-main animate__animated animate__pulse animate__infinite animate__slow" style="color: white;" class="animate__animated animate__pulse animate__infinite">5 900₽ <span class="disclaimer">в месяц</span></span>
+                </p>
+                <button type="button" data-mdb-toggle="modal" data-mdb-target="#emailModal" class="btn btn-offer-main animate__animated animate__pulse animate__slow animate__infinite" style="background-color: #55acee; margin-top: 2rem; font-size: 1.3rem;" href="#!" role="button">Оставить заявку</button>
+            </div>
+        </div>
+        <div class="card" style="width: 26rem; height: 26rem">
+            <div class="card-body offer">
+                <h3 class="card-title" style="text-align: center"><i class="fa-solid fa-person-walking icon-price"></i> Подписка на 90 дней</h3>
+                <p class="card-text">
+                <ul class="offer-description">
+                    <li>9 онлайн-сессий</li>
+                    <li>Неограниченный чат</li>
+                </ul>
+                <span class="price-tag">14 900₽ <span class="disclaimer">в год</span></span>
+                </p>
+                <button type="button" data-mdb-toggle="modal" data-mdb-target="#emailModal" class="btn btn-offer-default text-white animate__animated animate__pulse animate__slow animate__infinite" style="background-color: #55acee; margin-top: 2rem; font-size: 1.3rem;" href="#!" role="button">Оставить заявку</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section s9">
+    <h2 data-aos="zoom-in-down" style="margin-top: 3rem; text-align: center" class="mobile-heading">Ежемесячная подписка <br id="mobile-br">"Мой Психолог"<br><span class="text-color">выгоднее</span> психотерапии в 2 раза</h2>
+    <div data-aos="zoom-in-down" class="container-bg wide">
+        <div  class="row bills">
+            <div class="card" style="width: 22rem; height: 100%; max-height: 13rem;">
+                <div class="card-body offer">
+                    <h3 class="card-title" style=""><i class="fa-solid fa-wallet offer-icon"></i></i></h3>
+                    <p class="card-text" style="font-size: 1.5rem!important; text-align: left;">
+                        Средняя цена за 1 сессию с Психологом - 3 500₽
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 22rem; height: 100%; max-height: 13rem;">
+                <div class="card-body offer">
+                    <h3 class="card-title" style=""><i class="fa-solid fa-money-bill offer-icon"></i></i></h3>
+                    <p class="card-text" style="font-size: 1.5rem!important; text-align: left;">
+                        Стоимость консультаций в месяц - от 10 500₽
+                    </p>
+                </div>
+            </div>
+            <div class="card card-special" style="width: 22rem; height: 100%; max-height: 13rem;">
+                <div class="card-body offer">
+                    <h3 class="card-title" style="color: white;"><i class="fa-solid fa-thumbs-up offer-icon"></i></i></h3>
+                    <p class="card-text" style="font-size: 1.5rem!important; color: white;">
+                        Подписка на Мой Психолог в месяц - <b>4 900₽</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section s10">
+    <div class="row">
+        <div class="col">
+            <img class="main" src="img/help.svg"/>
+        </div>
+        <div class="col text-col">
+            <h1 class="mobile-h1" data-aos="zoom-in-down" style="margin-top: 4rem;">Познакомиться со своим <span class="text-color">психологом</span>
+            </h1>
+            <p style="margin-top: 1rem;">Напишите нам, чтобы найти своего психолога
+            </p>
+            <button type="button" data-mdb-toggle="modal" data-mdb-target="#emailModal" class="btn btn-offer text-white animate__animated animate__pulse animate__slow animate__infinite" style="background-color: #55acee; margin-top: 2rem;" href="#!" role="button">Оставить заявку</button>
+        </div>
+    </div>
+
+</section>
+
+<footer class="bg-light text-center text-lg-start">
+    <div class="text-center footer social-links" style="background-color: rgba(0, 0, 0, 0.2);">
+        <a class="social-icons tel" href="tel:+79955977886"><i class="fa-solid fa-phone"></i></a>
+        <a class="social-icons tg" href="https://telegram.me/psyreply"><i class="fa-brands fa-telegram"></i></a>
+        <a class="social-icons wa" href="https://api.whatsapp.com/send?phone=79955977886"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center copyright footer" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 |
+        <a style="color: white;" href="https://psyreply.com">Reply</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!--Кнопка наверх-->
+<button type="button" class="btn btn-primary btn-floating btn-lg animate__animated animate__bounceInDown" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<!--Модалка-->
+<div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="row modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Заявка на выбор <br id="mobile-br"> <span class="text-color">Моего Психолога</span></h4>
+                <p style="text-align: center; font-size: 1.3rem!important;">Мы напишем в течение часа</p>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-outline mb-4">
+                        <input type="text" id="name" class="form-control" />
+                        <label class="form-label" for="name">Ваше Имя</label>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <input type="tel" id="typePhone" class="form-control" />
+                        <label class="form-label" for="typePhone">Номер телефона</label>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <input type="email" id="email" class="form-control" />
+                        <label class="form-label" for="email">Адрес эл. почты</label>
+                    </div>
+                    <p style="text-align: center; font-size: 1.3rem!important;">Выберите вариант подписки</p>
+                    <div class="btn-group">
+                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked />
+                        <label class="btn btn-secondary" for="option1">7 дней</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" />
+                        <label class="btn btn-secondary" for="option2">31 день</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" />
+                        <label class="btn btn-secondary" for="option3">3 месяца</label>
+                    </div>
+                    <p class="policy">Отправляя заявку, вы соглашаетесь с <a class="policy-link" href="/policy.docx">политикой на обработку персональных данных</a></p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Отправить заявку</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--AOS+Фикс инпутов MDB-->
+<script>
+    AOS.init({disable: 'mobile'});
+    document.querySelectorAll('.form-outline').forEach((formOutline) => {
+        new mdb.Input(formOutline).init();
+    });
+</script>
+<script>
+
+    let topButton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            topButton.style.display = "block";
+        } else {
+            topButton.style.display = "none";
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    topButton.addEventListener("click", backToTop);
+
+    function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<script>
+    const slider = document.querySelector('.crew');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(walk);
+    });
+</script>
+</body>
+</html>
