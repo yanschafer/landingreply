@@ -421,7 +421,7 @@
 <button type="button" class="btn btn-primary btn-floating btn-lg animate__animated animate__bounceInDown" id="btn-back-to-top">
     <i class="fas fa-arrow-up"></i>
 </button>
-<!--Модалка-->
+<!--Модалка c формой-->
 <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -459,13 +459,31 @@
                 </form>
             </div>
             <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Закрыть</button>
-                    <button type="button" class="btn btn-primary">Отправить заявку</button>
+                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Закрыть</button>
+                <button data-mdb-target="#modalAprove" data-mdb-toggle="modal" data-mdb-dismiss="modal" class="btn btn-primary">Отправить заявку</button>
             </div>
         </div>
     </div>
 </div>
-
+<!--Модалка с подтверждением-->
+<div class="modal fade" id="modalAprove" aria-hidden="true" aria-labelledby="exampleModalToggleLabel22" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel22">Спасибо!</h5>
+            </div>
+            <div class="modal-body" style="text-align: center">
+                <i class="fa-solid fa-heart fa-beat" style="color: #ff0040; font-size: 5rem; margin-bottom: 2rem;"></i><br>
+                Наши консультанты уже начали биться за вашу заявку. Победитель свяжется с вами в ближайшее время
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-mdb-dismiss="modal">
+                    Вернуться на сайт
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 <!--AOS+Фикс инпутов MDB-->
 <script>
     AOS.init({disable: 'mobile'});
